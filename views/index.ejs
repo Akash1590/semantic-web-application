@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Semantic Web Applications</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="p-4 pt-5">
+                <h2 class="mb-4">All Subjects</h2>
+                <!-- <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.jpg);"></a> -->
+                <div style="height: 570px; width: 100%; overflow:auto;" id="mydiv"> 
+                <ul class="list-unstyled components mb-5">
+                    
+
+
+                    <% data.forEach(function(dat) { %>
+                    <li>
+                        <a id='subject' href='/index/draw?q=<%= dat %>'><%= dat %></a>
+                    </li>
+                    <% }); %>
+                </ul>
+                </div>
+
+                <!-- <div class="footer">
+	        	<p><a target="_blank">Beakash</a></p>
+	        </div> -->
+
+            </div>
+        </nav>
+        <% if (predicate.length>0 ) {%>
+        <div id="content" class="p-4 p-md-5">
+            <svg data-gwd-shape="oval" preserveAspectRatio="none" viewBox="0 0 68 55" class="gwd-oval-1kbl gwd-svg-1rcm"
+                id="maincircle">
+                <ellipse cx="50%" cy="50%" rx="33.5" ry="27"></ellipse>
+            </svg>
+            <p class="gwd-p-1tcw" id="maincircletext" style="color:red"><br><%= subject %>
+                
+            </p>
+        
+        
+            <svg data-gwd-shape="oval" preserveAspectRatio="none" viewBox="0 0 68 55" class="gwd-oval-1kbl gwd-svg-1uui"
+                id="circle1">
+                <ellipse cx="50%" cy="50%" rx="33.5" ry="27"></ellipse>
+            </svg>
+            <p class="gwd-p-1wmp" id="object1"><br>
+                <%= object[0] %>
+            </p>
+            <p class="gwd-p-gv3u" id="predicate1" style="color:green"><br>
+                <%= predicate[0] %>
+            </p>
+            <svg data-gwd-shape="line" preserveAspectRatio="none" viewBox="0 0 198 1" class="gwd-line-45fu" id="line1">
+                <line x1="0" x2="198" y1="0.5" y2="0.5"></line>
+            </svg>
+        
+        
+            <svg data-gwd-shape="oval" preserveAspectRatio="none" viewBox="0 0 68 55" class="gwd-oval-1kbl gwd-svg-840d"
+                id="circle2">
+                <ellipse cx="50%" cy="50%" rx="33.5" ry="27"></ellipse>
+            </svg>
+            <p class="gwd-p-1t1l" id="object2"><br>
+                <%= object[1] %>
+            </p>
+            <p class="gwd-p-m05f" id="predicate2" style="color:green"><br>
+                <%= predicate[1] %>
+            </p>
+            <svg data-gwd-shape="line" preserveAspectRatio="none" viewBox="0 0 1 117" class="gwd-line-1v6i" id="line2">
+                <line x1="0.5" x2="0.5" y1="0" y2="117"></line>
+            </svg>
+        
+        
+            <svg data-gwd-shape="oval" preserveAspectRatio="none" viewBox="0 0 68 55" class="gwd-oval-1kbl gwd-svg-3xid"
+                id="circle3">
+                <ellipse cx="50%" cy="50%" rx="33.5" ry="27"></ellipse>
+            </svg>
+            <p class="gwd-p-1qu4" id="object3"><br><%= object[2] %>
+        
+            </p>
+            <p class="gwd-p-nms8" id="predicate3" style="color:green"><br><%= predicate[2] %>
+        
+            </p>
+            <svg data-gwd-shape="line" preserveAspectRatio="none" viewBox="0 0 230 1" class="gwd-line-8zkx" id="line3">
+                <line x1="0" x2="230" y1="0.5" y2="0.5"></line>
+            </svg>
+        
+        
+            <svg data-gwd-shape="oval" preserveAspectRatio="none" viewBox="0 0 68 55" class="gwd-oval-1kbl gwd-svg-4zvi"
+                id="circle4">
+                <ellipse cx="50%" cy="50%" rx="33.5" ry="27"></ellipse>
+            </svg>
+            <p class="gwd-p-u9fn gwd-p-10q7" id="object4"><br><%= object[3] %>
+        
+            </p>
+            <p class="gwd-p-fj5n" id="predicate4" style="color:green"><br><%= predicate[3] %>
+        
+            </p>
+        
+            <svg data-gwd-shape="line" preserveAspectRatio="none" viewBox="0 0 257.143 107.357" class="gwd-line-1ucs">
+                <line x1="0.191" x2="256.952" y1="0.462" y2="106.895"></line>
+            </svg>
+        
+        
+        
+            <svg data-gwd-shape="oval" preserveAspectRatio="none" viewBox="0 0 68 55" class="gwd-oval-1kbl gwd-svg-1tuo"
+                id="circle5">
+                <ellipse cx="50%" cy="50%" rx="33.5" ry="27"></ellipse>
+            </svg>
+            <p class="gwd-p-u9fn gwd-p-148s" id="object5"><br><%= object[4] %>
+        
+            </p>
+            <p class="gwd-p-fj5n gwd-p-459b" id="predicate5" style="color:green"><br><%= predicate[4] %>
+        
+            </p>
+            <svg data-gwd-shape="line" preserveAspectRatio="none" viewBox="0 0 179.498 103.866" class="gwd-line-pcnv">
+                <line x1="0.249" x2="179.249" y1="103.433" y2="0.433"></line>
+            </svg>
+        <% if (predicate.length>5 ) {%>
+        
+            <svg data-gwd-shape="oval" preserveAspectRatio="none" viewBox="0 0 68 55" class="gwd-oval-1kbl gwd-svg-1gcs"
+                id="circle6">
+                <ellipse cx="50%" cy="50%" rx="33.5" ry="27"></ellipse>
+            </svg>
+            <p class="gwd-p-1xn9" id="object6"><br><%= object[5] %>
+        
+            </p>
+            <p class="gwd-p-15n6" id="predicate6" style="color:green"><br><%= predicate[5] %>
+        
+            </p>
+            <svg data-gwd-shape="line" preserveAspectRatio="none" viewBox="0 0 253.42 117.908" class="gwd-line-1c5e" id="line6">
+                <line x1="0.21" x2="253.21" y1="0.454" y2="117.454"></line>
+            </svg>
+        <% } %>
+        
+            <% if (predicate.length>6 ) {%>
+            <svg data-gwd-shape="oval" preserveAspectRatio="none" viewBox="0 0 68 55" class="gwd-oval-1kbl gwd-svg-101i"
+                id="circle7">
+                <ellipse cx="50%" cy="50%" rx="33.5" ry="27"></ellipse>
+            </svg>
+            <p class="gwd-p-wbtm" id="object7"><br><%= object[6] %>
+        
+            </p>
+            <p class="gwd-p-cye5" id="predicate7" style="color:green"><br><%= predicate[6] %>
+        
+            </p>
+            <svg data-gwd-shape="line" preserveAspectRatio="none" viewBox="0 0 311.306 115.384" class="gwd-line-9hay">
+                <line x1="0.173" x2="311.133" y1="114.915" y2="0.469"></line>
+            </svg>
+        <% } %>
+       
+        </div>
+        <% } %>
+    </div>
+</body>
+
+</html>

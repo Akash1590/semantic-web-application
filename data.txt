@@ -1,0 +1,1628 @@
+{ "head": {
+    "vars": [ "subject" , "predicate" , "object" ]
+  } ,
+  "results": {
+    "bindings": [
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2017-10-23" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Constituents of thoughts or real world entities." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Observation" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-11-27" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Observation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Any record that relates to monitoring a process." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Observation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Observation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Observation" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Observation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "bmLC:Observation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/CAUSES" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2017-10-23" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/CAUSES" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "UMLS Annotation." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/CAUSES" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Relation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/CAUSES" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/CAUSES" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/CAUSES" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Causes" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Author" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2019-05-24" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Author" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Author of Scientific publications." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Author" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Author" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Author" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Author" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Author" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Relation" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2017-10-23" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Relation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Relations between concepts." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Relation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Relation" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://en.wikipedia.org/wiki/Mar%C3%ADa-Esther_Vidal" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Relation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Relation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Date" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-10-30" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Date" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Date" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Date" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Date" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Date" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Date" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Date" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Annotation" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2017-10-23" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Annotation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Explanation of a concept including label, id and source of concept." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Annotation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Annotation" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Annotation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Annotation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PerformanceStatus" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-09-27" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PerformanceStatus" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Patient's level of functioning in terms of her/his ability for caring her/himself, daily activities and phyical abilities." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PerformanceStatus" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PerformanceStatus" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PerformanceStatus" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "PerformanceStatus" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Protein" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-07-24" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Protein" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Large and complex molecules that play many critical roles in the body. They are required for the structure, function and regulation of the body's tissues and organs." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Protein" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Protein" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Protein" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Protein" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Protein" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LCImage" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-11-25" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LCImage" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Image of patient with Lung Cancer" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LCImage" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LCImage" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LCImage" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.l3s.de/de/user/mcastellanosd87" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LCImage" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "LCImage" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Organ" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-11-26" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Organ" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "The organ which the image belong to." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Organ" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Organ" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Organ" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.l3s.de/de/user/mcastellanosd87" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Organ" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Organ" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Enzyme" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2017-07-24" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Enzyme" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Macromolecular biological catalyst that accelerate chemical reactions. Most enzymes are proteins." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Enzyme" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Enzyme" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Enzyme" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Enzyme" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Enzyme" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PerformanceObservation" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-11-27" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PerformanceObservation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PerformanceObservation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Observation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PerformanceObservation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PerformanceObservation" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.l3s.de/de/user/mcastellanosd87" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PerformanceObservation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "bmLC:PerformanceObservation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/EQTL" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-07-24" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/EQTL" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "An eQTL is a locus that explains a fraction of the genetic variance of a gene expression phenotype." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/EQTL" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/EQTL" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/EQTL" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/EQTL" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "eQTL" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LungCancerDrug" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2019-05-23" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LungCancerDrug" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LungCancerDrug" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Drug" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LungCancerDrug" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LungCancerDrug" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LungCancerDrug" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "LungCancerDrug" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/INTERACTS_WITH" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2017-10-23" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/INTERACTS_WITH" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "UMLS Annotation." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/INTERACTS_WITH" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Relation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/INTERACTS_WITH" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/INTERACTS_WITH" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/INTERACTS_WITH" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "InteractsWith" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Variation" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-12-10" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Variation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Variation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Variation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Variation" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Variation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Variation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PREDISPOSES" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2017-10-23" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PREDISPOSES" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "UMLS Annotation." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PREDISPOSES" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Relation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PREDISPOSES" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PREDISPOSES" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PREDISPOSES" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Predisposes" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/TumorType" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-10-04" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/TumorType" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "The histology kind of the lung cancer. The type of tumor." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/TumorType" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/TumorType" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/TumorType" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/TumorType" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "TumorType" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/STIMULATES" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2017-10-23" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/STIMULATES" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "UMLS Annotation." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/STIMULATES" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Relation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/STIMULATES" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/STIMULATES" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/STIMULATES" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Stimulates" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/ToxicityObservation" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2019-05-24" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/ToxicityObservation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/ToxicityObservation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Observation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/ToxicityObservation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/ToxicityObservation" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.l3s.de/de/user/mcastellanosd87" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/ToxicityObservation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "bmLC:ToxicityObservation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Publication" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2017-10-23" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Publication" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Scientific publications." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Publication" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Publication" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Publication" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Publication" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Publication" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/MENTIONED_IN" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2017-10-23" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/MENTIONED_IN" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "A relation that shows in which publication each specific CUI term has been appeared." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/MENTIONED_IN" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Relation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/MENTIONED_IN" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/MENTIONED_IN" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/MENTIONED_IN" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "MentionedIn" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/TumorStage" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-10-04" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/TumorStage" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Represents the assessment of the stage of tumor in a particular date." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/TumorStage" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/TumorStage" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/TumorStage" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "TumorStage" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/DrugGroup" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-10-04" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/DrugGroup" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "The type of drugs that has been prescribed to the patient." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/DrugGroup" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/DrugGroup" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/DrugGroup" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/DrugGroup" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "DrugGroup" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Modality" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-11-26" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Modality" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Modality of image" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Modality" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Modality" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Modality" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.l3s.de/de/user/mcastellanosd87" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Modality" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Modality" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Impact" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-10-23" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Impact" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "The impact that interaction between two drugs has on the performance of the drug." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Impact" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Impact" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Impact" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Impact" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Impact" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/DrugSideEffect" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2017-07-24" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/DrugSideEffect" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "The Drug SideEffect relation should be a class since has two properties" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/DrugSideEffect" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Relation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/DrugSideEffect" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/DrugSideEffect" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/DrugSideEffect" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "DrugSideEffect" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Biomarker" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-11-22" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Biomarker" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "A biomarker, or biological marker is a measurable indicator of some biological state or condition." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Biomarker" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Biomarker" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Biomarker" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.l3s.de/de/user/mcastellanosd87" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Biomarker" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Biomarker" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Drug" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-07-23" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Drug" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "A substance used as a medication or in the preparation of medication." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Drug" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Drug" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Drug" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Drug" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Drug" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/NucleotideSequence" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-12-10" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/NucleotideSequence" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Includes DNA and RNAs." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/NucleotideSequence" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/NucleotideSequence" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/NucleotideSequence" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/NucleotideSequence" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "NucleotideSequence" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/EffectInteraction" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-10-23" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/EffectInteraction" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "The relation between two drugs that interact." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/EffectInteraction" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Relation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/EffectInteraction" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/EffectInteraction" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/EffectInteraction" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "EffectInteraction" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PatientSimilarity" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-11-27" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PatientSimilarity" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PatientSimilarity" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PatientSimilarity" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PatientSimilarity" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.l3s.de/de/user/mcastellanosd87" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PatientSimilarity" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "PatientSimilarity" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LiquidBiopsy" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-07-24" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LiquidBiopsy" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "A test done on a sample of blood to look for cancer cells from a tumor that are circulating in the blood or for pieces of DNA from tumor cells that are in the blood." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LiquidBiopsy" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Test" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LiquidBiopsy" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LiquidBiopsy" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LiquidBiopsy" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "LiquidBiopsy" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LCPatient" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-07-24" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LCPatient" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "A patient who is diagnosed with Lung Cancer." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LCPatient" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Patient" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LCPatient" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LCPatient" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LCPatient" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "LungCancerPatient" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/FamiliarAntecedent" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-09-27" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/FamiliarAntecedent" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Familiar antecedents of the patient." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/FamiliarAntecedent" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/FamiliarAntecedent" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/FamiliarAntecedent" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "FamiliarAntecedent" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/BodyPartExamined" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-11-25" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/BodyPartExamined" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/BodyPartExamined" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/BodyPartExamined" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/BodyPartExamined" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.l3s.de/de/user/mcastellanosd87" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/BodyPartExamined" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "BodyPartExamined" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/TumorObservation" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-11-27" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/TumorObservation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/TumorObservation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Observation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/TumorObservation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/TumorObservation" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.l3s.de/de/user/mcastellanosd87" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/TumorObservation" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "bmLC:TumorObservation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Phenotype" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2019-01-30" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Phenotype" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "The set of observable characteristics of an individual resulting from the interaction of its genotype with the environment. This class include side effects that result from different drugs." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Phenotype" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Phenotype" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Phenotype" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Phenotype" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Phenotype" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/ASSOCIATED_WITH" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2017-10-23" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/ASSOCIATED_WITH" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "UMLS Annotation." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/ASSOCIATED_WITH" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Relation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/ASSOCIATED_WITH" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/ASSOCIATED_WITH" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/ASSOCIATED_WITH" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "AssociatedWith" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/RBP_RNA_PhysicalInteraction" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-07-24" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/RBP_RNA_PhysicalInteraction" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Interaction between RNA binding protein (the mediator factor) and RNA. " }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/RBP_RNA_PhysicalInteraction" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Relation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/RBP_RNA_PhysicalInteraction" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/RBP_RNA_PhysicalInteraction" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/RBP_RNA_PhysicalInteraction" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "RBP_RNA_PhysicalInteraction" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Diagnosis" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-11-26" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Diagnosis" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "The identification of the nature of an illness or other problem by examination of the symptoms." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Diagnosis" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Diagnosis" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Diagnosis" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.l3s.de/de/user/mcastellanosd87" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Diagnosis" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Diagnosis" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Test" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2017-10-23" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Test" } ,
+        "predicate": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/partOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/ClinicalRecord" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Test" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Medical procedure performed to detect, diagnose, or monitor diseases, disease processes, susceptibility, and determine a course of treatment." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Test" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Test" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Test" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://en.wikipedia.org/wiki/Mar%C3%ADa-Esther_Vidal" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Test" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "MedicalTest" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Target" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-10-30" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Target" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "A drug target is a molecule in the body, usually a protein, that is intrinsically associated with a particular disease process and that could be addressed by a drug to produce a desired therapeutic effect." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Target" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Target" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Target" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Target" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Target" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Gender" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-09-27" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Gender" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "The gender of the patients." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Gender" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Gender" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Gender" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Gender" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Effect" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-10-23" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Effect" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "The effectiveness of a drug according to its interaction with another drug." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Effect" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Effect" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Effect" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Effect" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Effect" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/INHIBITS" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2017-10-23" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/INHIBITS" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "UMLS Annotation." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/INHIBITS" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Relation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/INHIBITS" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/INHIBITS" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/INHIBITS" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Inhibits" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PredictedDrugSideEffect" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2019-01-30" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PredictedDrugSideEffect" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "The predicted Drug SideEffect relation." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PredictedDrugSideEffect" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Relation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PredictedDrugSideEffect" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PredictedDrugSideEffect" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PredictedDrugSideEffect" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "PredictedDrugSideEffect" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/SourceName" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2017-10-23" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/SourceName" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Source name." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/SourceName" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/SourceName" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/SourceName" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "SourceName" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Disorder" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-10-30" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Disorder" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Disorders!" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Disorder" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Disorder" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Disorder" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Disorder" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Disorder" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PatientPosition" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-11-26" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PatientPosition" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Patient position" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PatientPosition" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PatientPosition" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PatientPosition" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.l3s.de/de/user/mcastellanosd87" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/PatientPosition" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "PatientPosition" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/HAS_TOPIC" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2017-10-23" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/HAS_TOPIC" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "A relation that shows which CUI has been appeared in each specific publication." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/HAS_TOPIC" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Relation" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/HAS_TOPIC" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/HAS_TOPIC" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/HAS_TOPIC" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "HasTopic" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Patient" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-07-24" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Patient" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "A person who is receiving medical care." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Patient" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Patient" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Patient" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Patient" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "Patient" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Image" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2017-10-23" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Image" } ,
+        "predicate": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/partOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/ClinicalRecord" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Image" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "Patient's medical images." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Image" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Image" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Image" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://en.wikipedia.org/wiki/Mar%C3%ADa-Esther_Vidal" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Image" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "MedicalImage" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LungLaterality" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" } ,
+        "object": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#date" , "value": "2018-11-26" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LungLaterality" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "object": { "type": "literal" , "value": "The laterality of lung to which the image refers." }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LungLaterality" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "object": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/Concept" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LungLaterality" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "object": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LungLaterality" } ,
+        "predicate": { "type": "uri" , "value": "http://purl.org/dc/terms/creator" } ,
+        "object": { "type": "uri" , "value": "https://www.l3s.de/de/user/mcastellanosd87" }
+      } ,
+      { 
+        "subject": { "type": "uri" , "value": "http://bigmedilytics.eu/vocab/LungLaterality" } ,
+        "predicate": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "object": { "type": "literal" , "value": "LungLaterality" }
+      }
+    ]
+  }
+}
