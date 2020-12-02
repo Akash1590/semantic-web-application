@@ -3,7 +3,7 @@ For Running this application First you have download the fuseki server.<br>
 Download the fuseki sever from this URL: https://jena.apache.org/download/ => Apache Jena Fuseki(apache-jena-fuseki-3.17.0.tar.gz)<br>
 After downloading, unzip the file and rename the folder as "Fuseki" and move it to C:\\ <br>
 Clone the repositry to your local machine.<br>
-Copy the rdf.ttl file which is located on repositoryfolder=>datafiles=>rdf.ttl and then put it to Fuseki folder.<br>
+Copy the rdf.ttl file which is located on repositoryfolder(semantic-web-application-master)=>datafiles=>rdf.ttl and then put it to Fuseki folder.<br>
 Run the command prompt and go to the Fuseki folder and run the command "fuseki-server --file=rdf.ttl /dataset"<br>
 It will run the server on port 3030 and you can see the data on localhost:3030<br>
 
