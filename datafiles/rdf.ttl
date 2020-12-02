@@ -1,0 +1,1794 @@
+@prefix bmLC: <http://bigmedilytics.eu/vocab/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+##########################################################################################
+################################## Classes ###############################################
+##########################################################################################
+
+bmLC:Concept 	rdf:type	owl:Class;
+				rdfs:label	"Concept";
+				rdfs:comment "Constituents of thoughts or real world entities.";
+				dcterms:modified "2017-10-23"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+
+bmLC:Annotation	rdf:type	owl:Class;
+					rdfs:label	"Annotation";
+					rdfs:comment "Explanation of a concept including label, id and source of concept.";
+					dcterms:modified "2017-10-23"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+
+bmLC:Relation	rdf:type	owl:Class;
+					rdfs:label	"Relation";
+					rdfs:comment "Relations between concepts.";
+					dcterms:modified "2017-10-23"^^xsd:date;
+					dcterms:creator <https://en.wikipedia.org/wiki/Mar%C3%ADa-Esther_Vidal>.
+
+bmLC:SourceName	rdf:type	owl:Class;
+					rdfs:label	"SourceName";
+					rdfs:comment "Source name.";
+					dcterms:modified "2017-10-23"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+
+bmLC:Image rdf:type owl:Class;
+			rdfs:label	"MedicalImage";
+			rdfs:subClassOf	bmLC:Concept;
+			bmLC:partOf bmLC:ClinicalRecord;
+			rdfs:comment "Patient's medical images.";
+			dcterms:modified "2017-10-23"^^xsd:date;
+			dcterms:creator <https://en.wikipedia.org/wiki/Mar%C3%ADa-Esther_Vidal>.
+
+bmLC:Test 	rdf:type owl:Class;
+			rdfs:label	"MedicalTest";
+			rdfs:subClassOf	bmLC:Concept;
+			bmLC:partOf bmLC:ClinicalRecord;
+			rdfs:comment "Medical procedure performed to detect, diagnose, or monitor diseases, disease processes, susceptibility, and determine a course of treatment.";
+			dcterms:modified "2017-10-23"^^xsd:date;
+			dcterms:creator <https://en.wikipedia.org/wiki/Mar%C3%ADa-Esther_Vidal>.
+
+
+#### WP4 requirements: 
+
+bmLC:Publication	rdf:type	owl:Class;
+					rdfs:label	"Publication";
+					rdfs:subClassOf	bmLC:Concept;
+					rdfs:comment "Scientific publications.";
+					dcterms:modified "2017-10-23"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+
+bmLC:Author	rdf:type	owl:Class;
+					rdfs:label	"Author";
+					rdfs:subClassOf	bmLC:Concept;
+					rdfs:comment "Author of Scientific publications.";
+					dcterms:modified "2019-05-24"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+bmLC:MENTIONED_IN	rdf:type owl:Class;
+					rdfs:label	"MentionedIn";
+					rdfs:subClassOf bmLC:Relation;
+					rdfs:comment	"A relation that shows in which publication each specific CUI term has been appeared.";
+					dcterms:modified "2017-10-23"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+
+bmLC:HAS_TOPIC	rdf:type owl:Class;
+				rdfs:label	"HasTopic";
+				rdfs:subClassOf bmLC:Relation;
+				rdfs:comment	"A relation that shows which CUI has been appeared in each specific publication.";
+				dcterms:modified "2017-10-23"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:ASSOCIATED_WITH	rdf:type owl:Class;
+						rdfs:label	"AssociatedWith";
+						rdfs:subClassOf bmLC:Relation;
+						rdfs:comment	"UMLS Annotation.";
+						dcterms:modified "2017-10-23"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+
+bmLC:CAUSES	rdf:type owl:Class;
+				rdfs:label	"Causes";
+				rdfs:subClassOf bmLC:Relation;
+				rdfs:comment	"UMLS Annotation.";
+				dcterms:modified "2017-10-23"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+
+bmLC:INHIBITS	rdf:type owl:Class;
+				rdfs:label	"Inhibits";
+				rdfs:subClassOf bmLC:Relation;
+				rdfs:comment	"UMLS Annotation.";
+				dcterms:modified "2017-10-23"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+
+bmLC:INTERACTS_WITH rdf:type owl:Class;
+					rdfs:label	"InteractsWith";
+					rdfs:subClassOf bmLC:Relation;
+					rdfs:comment	"UMLS Annotation.";
+					dcterms:modified "2017-10-23"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+
+bmLC:PREDISPOSES 	rdf:type owl:Class;
+					rdfs:label	"Predisposes";
+					rdfs:subClassOf bmLC:Relation;
+					rdfs:comment	"UMLS Annotation.";
+					dcterms:modified "2017-10-23"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+
+bmLC:STIMULATES 	rdf:type owl:Class;
+					rdfs:label	"Stimulates";
+					rdfs:subClassOf bmLC:Relation;
+					rdfs:comment	"UMLS Annotation.";
+					dcterms:modified "2017-10-23"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+
+#### COSMIC requirements:
+
+
+#### WP3 requirements:
+
+bmLC:Protein 	rdf:type owl:Class;
+				rdfs:label	"Protein";
+				rdfs:subClassOf	bmLC:Concept;
+				rdfs:comment "Large and complex molecules that play many critical roles in the body. They are required for the structure, function and regulation of the body's tissues and organs.";
+				dcterms:modified "2018-07-24"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:RBP_RNA_PhysicalInteraction	rdf:type	owl:Class;
+									rdfs:label	"RBP_RNA_PhysicalInteraction";
+									rdfs:subClassOf	bmLC:Relation;
+									rdfs:comment "Interaction between RNA binding protein (the mediator factor) and RNA. ";
+									dcterms:modified "2018-07-24"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:EQTL	rdf:type owl:Class;
+			rdfs:label	"eQTL";
+			rdfs:subClassOf	bmLC:Concept;
+			rdfs:comment "An eQTL is a locus that explains a fraction of the genetic variance of a gene expression phenotype.";
+			dcterms:modified "2018-07-24"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:NucleotideSequence	rdf:type owl:Class;
+			rdfs:label	"NucleotideSequence";
+			rdfs:subClassOf	bmLC:Concept;
+			rdfs:comment "Includes DNA and RNAs.";
+			dcterms:modified "2018-12-10"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:Variation	rdf:type owl:Class;
+			rdfs:label	"Variation";
+			rdfs:subClassOf	bmLC:Concept;
+			rdfs:comment "";
+			dcterms:modified "2018-12-10"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+#### Drug requirements:
+
+bmLC:Drug	rdf:type owl:Class;
+			rdfs:label	"Drug";
+			rdfs:subClassOf	bmLC:Concept;
+			rdfs:comment "A substance used as a medication or in the preparation of medication.";
+			dcterms:modified "2018-07-23"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:LungCancerDrug	rdf:type owl:Class;
+			rdfs:label	"LungCancerDrug";
+			rdfs:subClassOf	bmLC:Drug;
+			rdfs:comment ".";
+			dcterms:modified "2019-05-23"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+
+
+bmLC:Phenotype rdf:type	owl:Class;
+					rdfs:label	"Phenotype";
+					rdfs:subClassOf	bmLC:Concept;
+					rdfs:comment "The set of observable characteristics of an individual resulting from the interaction of its genotype with the environment. This class include side effects that result from different drugs.";
+					dcterms:modified "2019-01-30"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+bmLC:DrugSideEffect	rdf:type owl:Class;
+						rdfs:label	"DrugSideEffect";
+						rdfs:subClassOf	bmLC:Relation;
+						rdfs:comment "The Drug SideEffect relation should be a class since has two properties";
+						dcterms:modified "2017-07-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:Enzyme	rdf:type owl:Class;
+				rdfs:label	"Enzyme";
+				rdfs:subClassOf	bmLC:Concept;
+				rdfs:comment "Macromolecular biological catalyst that accelerate chemical reactions. Most enzymes are proteins.";
+				dcterms:modified "2017-07-24"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:Effect	rdf:type owl:Class;
+				rdfs:label	"Effect";
+				rdfs:subClassOf	bmLC:Concept;
+				rdfs:comment "The effectiveness of a drug according to its interaction with another drug.";
+				dcterms:modified "2018-10-23"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:Impact	rdf:type owl:Class;
+				rdfs:label	"Impact";
+				rdfs:subClassOf	bmLC:Concept;
+				rdfs:comment "The impact that interaction between two drugs has on the performance of the drug.";
+				dcterms:modified "2018-10-23"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:EffectInteraction	rdf:type owl:Class;
+				rdfs:label	"EffectInteraction";
+				rdfs:subClassOf	bmLC:Relation;
+				rdfs:comment "The relation between two drugs that interact.";
+				dcterms:modified "2018-10-23"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:Disorder	rdf:type owl:Class;
+				rdfs:label	"Disorder";
+				rdfs:subClassOf	bmLC:Concept;
+				rdfs:comment "Disorders!";
+				dcterms:modified "2018-10-30"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:Target	rdf:type owl:Class;
+				rdfs:label	"Target";
+				rdfs:subClassOf	bmLC:Concept;
+				rdfs:comment "A drug target is a molecule in the body, usually a protein, that is intrinsically associated with a particular disease process and that could be addressed by a drug to produce a desired therapeutic effect.";
+				dcterms:modified "2018-10-30"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:PredictedDrugSideEffect	rdf:type owl:Class;
+						rdfs:label	"PredictedDrugSideEffect";
+						rdfs:subClassOf	bmLC:Relation;
+						rdfs:comment "The predicted Drug SideEffect relation.";
+						dcterms:modified "2019-01-30"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.				
+
+
+#### WP2 requirements:
+#### clinical notes:
+
+bmLC:Observation    rdf:type        owl:Class;
+					rdfs:label	"bmLC:Observation";
+					rdfs:subClassOf	 bmLC:Concept;
+					rdfs:comment "Any record that relates to monitoring a process.";
+					dcterms:modified "2018-11-27"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:Patient rdf:type owl:Class;
+					rdfs:label	"Patient";
+					rdfs:subClassOf	bmLC:Concept;
+					rdfs:comment "A person who is receiving medical care.";
+					dcterms:modified "2018-07-24"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:LCPatient	rdf:type owl:Class;
+				rdfs:label	"LungCancerPatient";
+				rdfs:subClassOf	bmLC:Patient;
+				rdfs:comment "A patient who is diagnosed with Lung Cancer.";
+				dcterms:modified "2018-07-24"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+	
+bmLC:LiquidBiopsy 	rdf:type owl:Class;
+					rdfs:label	"LiquidBiopsy";
+					rdfs:subClassOf	bmLC:Test;
+					rdfs:comment	"A test done on a sample of blood to look for cancer cells from a tumor that are circulating in the blood or for pieces of DNA from tumor cells that are in the blood.";
+					dcterms:modified "2018-07-24"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:TumorStage	rdf:type owl:Class;
+					rdfs:label	"TumorStage";
+					rdfs:comment "Represents the assessment of the stage of tumor in a particular date.";
+					dcterms:modified "2018-10-04"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:PerformanceStatus	rdf:type	owl:Class;
+			rdfs:label	"PerformanceStatus";
+			rdfs:comment "Patient's level of functioning in terms of her/his ability for caring her/himself, daily activities and phyical abilities.";
+			dcterms:modified "2018-09-27"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:FamiliarAntecedent	rdf:type	owl:Class;
+							rdfs:label	"FamiliarAntecedent";
+							rdfs:comment "Familiar antecedents of the patient.";
+							dcterms:modified "2018-09-27"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:Gender	rdf:type	owl:Class;
+						rdfs:label	"Gender";
+						rdfs:comment "The gender of the patients.";
+						dcterms:modified "2018-09-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:DrugGroup	rdf:type	owl:Class;
+						rdfs:subClassOf bmLC:Concept;
+						rdfs:label	"DrugGroup";
+						rdfs:comment "The type of drugs that has been prescribed to the patient.";
+						dcterms:modified "2018-10-04"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+bmLC:TumorType	rdf:type	owl:Class;
+						rdfs:subClassOf bmLC:Concept;
+						rdfs:label	"TumorType";
+						rdfs:comment "The histology kind of the lung cancer. The type of tumor.";
+						dcterms:modified "2018-10-04"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:Date	rdf:type	owl:Class;
+						rdfs:subClassOf bmLC:Concept;
+						rdfs:label	"Date";
+						rdfs:comment "Date";
+						dcterms:modified "2018-10-30"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:Biomarker	 rdf:type	owl:Class;
+					rdfs:label	"Biomarker";
+					rdfs:subClassOf	bmLC:Concept;
+					rdfs:comment "A biomarker, or biological marker is a measurable indicator of some biological state or condition.";
+					dcterms:modified "2018-11-22"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:PerformanceObservation   rdf:type      owl:Class;
+					rdfs:label	"bmLC:PerformanceObservation";
+					rdfs:subClassOf	bmLC:Observation;
+					rdfs:comment "";
+					dcterms:modified "2018-11-27"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:TumorObservation    rdf:type        owl:Class;
+					rdfs:label	"bmLC:TumorObservation";
+					rdfs:subClassOf	 bmLC:Observation;
+					rdfs:comment "";
+					dcterms:modified "2018-11-27"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:ToxicityObservation    rdf:type        owl:Class;
+					rdfs:label	"bmLC:ToxicityObservation";
+					rdfs:subClassOf	 bmLC:Observation;
+					rdfs:comment "";
+					dcterms:modified "2019-05-24"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+#### clinical images:
+
+bmLC:Diagnosis  	rdf:type owl:Class;
+					rdfs:label	"Diagnosis";
+					rdfs:subClassOf	bmLC:Concept;
+					rdfs:comment "The identification of the nature of an illness or other problem by examination of the symptoms.";
+					dcterms:modified "2018-11-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.  
+
+bmLC:LCImage   	rdf:type owl:Class;
+					rdfs:label	"LCImage";
+					rdfs:subClassOf	bmLC:Concept;
+					rdfs:comment "Image of patient with Lung Cancer";
+					dcterms:modified "2018-11-25"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.  
+
+bmLC:LungLaterality   	rdf:type owl:Class;
+						rdfs:label	"LungLaterality";
+						rdfs:subClassOf	bmLC:Concept;
+						rdfs:comment "The laterality of lung to which the image refers.";
+						dcterms:modified "2018-11-26"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.  
+
+bmLC:Modality   	rdf:type owl:Class;
+					rdfs:label	"Modality";
+					rdfs:subClassOf	bmLC:Concept;
+					rdfs:comment "Modality of image";
+					dcterms:modified "2018-11-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>. 
+
+bmLC:Organ     	rdf:type owl:Class;
+					rdfs:label	"Organ";
+					rdfs:subClassOf	bmLC:Concept;
+					rdfs:comment "The organ which the image belong to.";
+					dcterms:modified "2018-11-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:PatientPosition   rdf:type owl:Class;
+						rdfs:label	"PatientPosition";
+						rdfs:subClassOf	bmLC:Concept;
+						rdfs:comment "Patient position";
+						dcterms:modified "2018-11-26"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:BodyPartExamined rdf:type         owl:Class;
+					rdfs:label	"BodyPartExamined";
+					rdfs:subClassOf	bmLC:Concept;
+					rdfs:comment "";
+					dcterms:modified "2018-11-25"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+####### lc_similarity:
+
+bmLC:PatientSimilarity   rdf:type owl:Class;
+			rdfs:label	"PatientSimilarity";
+			rdfs:subClassOf	bmLC:Concept;
+			rdfs:comment "";
+			dcterms:modified "2018-11-27"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+##################################################################################################
+################################### Properties ###################################################
+##################################################################################################
+
+bmLC:annID	rdf:type	owl:DatatypeProperty;
+			rdfs:label	"annID";
+			rdfs:domain bmLC:Annotation;
+			rdfs:range	rdfs:Literal;
+			rdfs:comment	"Identification of instances of Annotation class";	
+			dcterms:modified "2019-01-29"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:annLabel	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"annLabel";
+				rdfs:domain	bmLC:Annotation;
+				rdfs:range	rdfs:Literal;
+                		rdfs:comment	"Label of instances of Annotation class";
+				dcterms:modified "2018-04-12"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:annLabel_SPA	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"annLabel_SPA";
+				rdfs:domain	bmLC:Annotation;
+				rdfs:range	rdfs:Literal;
+                		rdfs:comment	"Spanish label of instances of Annotation class";
+				dcterms:modified "2019-01-30"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:provenance	rdf:type	owl:ObjectProperty;
+					rdfs:label	"provenance";
+					rdfs:domain bmLC:Concept;
+					rdfs:range	bmLC:SourceName;
+					rdfs:comment	"The name of the source from which the concept is extracted or derived";
+					dcterms:modified "2017-11-23"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+
+bmLC:hasAnnotation	rdf:type owl:ObjectProperty;
+								rdfs:label	"hasAnnotation";
+								rdfs:domain bmLC:Relation;
+				  				rdfs:range bmLC:Annotation;
+								rdfs:comment	"Connection between the annotation and the relation between annotation and publication";
+								dcterms:modified "2019-01-30"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:hasCUIAnnotation	rdf:type owl:ObjectProperty;
+								rdfs:label	"hasCUIAnnotation";
+								rdfs:domain bmLC:Concept;
+				  				rdfs:range bmLC:Annotation;
+								rdfs:comment	"CUI annotation of the concept.";
+								dcterms:modified "2019-01-29"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+bmLC:hasHPOAnnotation	rdf:type owl:ObjectProperty;
+								rdfs:label	"hasHPOAnnotation";
+								rdfs:domain bmLC:Phenotype;
+				  				rdfs:range bmLC:Annotation;
+								rdfs:comment	"HPO annotation of the phenotype.";
+								dcterms:modified "2019-01-30"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+#### WP4 requirements:
+
+bmLC:pubmedID	rdf:type owl:DatatypeProperty;
+					rdfs:label "PubMed ID";
+					rdfs:domain bmLC:Publication;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "PubMed ID.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:semanticType	rdf:type	owl:DatatypeProperty;
+					rdfs:label	"semanticType";
+					rdfs:domain	bmLC:Annotation;
+					rdfs:range	rdfs:Literal;
+					rdfs:comment	"A list with the allowed semantic_types for this Annotation in the UMLS. ";
+					dcterms:modified "2018-11-27"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:year	rdf:type	owl:DatatypeProperty;
+			rdfs:label	"year";
+			rdfs:domain	bmLC:Publication;
+			rdfs:range	rdfs:Literal;
+			rdfs:comment	"Year of Publication";
+			dcterms:modified "2018-04-12"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:author	rdf:type	owl:ObjectProperty;
+				rdfs:label	"authors";
+				rdfs:domain	bmLC:Publication;
+				rdfs:range	bmLC:Author;
+				rdfs:comment	"Authors of publication";
+				dcterms:modified "2019-05-24"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:authorName	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"authorName";
+				rdfs:domain	bmLC:Author;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Name of Author";
+				dcterms:modified "2019-05-24"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+bmLC:journal	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"journal";
+				rdfs:domain	bmLC:Publication;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Journal of publication";
+				dcterms:modified "2018-04-12"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>. 
+
+bmLC:rankingScore_SJR	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"rankingScore_SJR";
+				rdfs:domain	bmLC:Publication;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"ranking Score_SJR Journal of publication";
+				dcterms:modified "2019-05-24"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>. 
+
+bmLC:rankingScore_hIndex	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"rankingScore_hIndex";
+				rdfs:domain	bmLC:Publication;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"ranking Score_hIndex of Journal of publication";
+				dcterms:modified "2019-05-24"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>. 
+
+
+bmLC:publicationType	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"bmLC:publicationType";
+				rdfs:domain	bmLC:Publication;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Type of Publication";
+				dcterms:modified "2019-05-24"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>. 
+
+bmLC:authorAffiliation	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"authorAffiliation";
+				rdfs:domain	bmLC:Publication;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Affiliation of Author";
+				dcterms:modified "2019-05-24"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+
+bmLC:annotates	rdf:type	owl:ObjectProperty;
+							rdfs:label	"annotates";
+							rdfs:domain	bmLC:Relation;
+							rdfs:range	bmLC:Publication;
+							rdfs:comment	"Connection between mentionedIn or HasTopic relation with CUI.";
+							dcterms:modified "2019-05-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:publication_isRelatedTo_Disease	rdf:type	owl:ObjectProperty;
+							rdfs:label	"publication_isRelatedTo_Disease";
+							rdfs:domain	bmLC:Publication;
+							rdfs:range	bmLC:Disorder;
+							rdfs:comment	"";
+							dcterms:modified "2019-05-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-mcastellanosd87/>.
+
+bmLC:confidence     rdf:type     owl:DatatypeProperty;
+							rdfs:label	"confidence";
+							rdfs:domain	bmLC:Relation;
+                                                      	rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:negation     rdf:type     owl:DatatypeProperty;
+							rdfs:label	"negation";
+							rdfs:domain	bmLC:Relation;
+                                                      	rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2019-05-24"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:relation_isRelatedTo_annotation	rdf:type        owl:ObjectProperty;	
+				                rdfs:label	"relation_isRelatedTo_annotation";
+						rdfs:domain	bmLC:Relation;
+						rdfs:range	bmLC:Annotation;
+						rdfs:comment	".";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+
+bmLC:relation_isRelatedTo_publication	rdf:type        owl:ObjectProperty;	
+				                rdfs:label	"relation_isRelatedTo_publication";
+						rdfs:domain	bmLC:Relation;
+						rdfs:range	bmLC:Publication;
+						rdfs:comment	".";
+						dcterms:modified "2019-05-24"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:title     rdf:type     owl:DatatypeProperty;
+							rdfs:label	"title";
+							rdfs:domain	bmLC:Publication;
+                                                      	rdfs:range	rdfs:Literal;
+							rdfs:comment "Title of Publication.";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+#### COSMIC requirements:
+
+
+
+########### ClinVar ###############
+
+
+
+#### Drug requirements:
+
+bmLC:drugLabel	rdf:type owl:DatatypeProperty;
+					rdfs:label "DrugLabel";
+					rdfs:domain bmLC:Drug;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Drug label.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+bmLC:drugLabel_ENG	rdf:type owl:DatatypeProperty;
+					rdfs:label "drugLabel_ENG";
+					rdfs:domain bmLC:Drug;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Drug label.";
+					dcterms:modified "2019-01-30"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.					
+
+bmLC:disorderLabel_ENG	rdf:type owl:DatatypeProperty;
+					rdfs:label "disorderLabel_ENG";
+					rdfs:domain bmLC:Disorder;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Disorder label.";
+					dcterms:modified "2019-05-24"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.	
+
+bmLC:isPrescribedFor	rdf:type owl:ObjectProperty;
+					rdfs:label "isPrescribedFor";
+					rdfs:domain bmLC:Drug;
+				  	rdfs:range bmLC:Disorder;
+                  			rdfs:comment "Drug is prescribed for a Disorder.";
+					dcterms:modified "2019-05-23"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+bmLC:drugDrugInteraction_drugBank	rdf:type owl:ObjectProperty;
+					rdfs:label "drugDrugInteraction_drugBank";
+					rdfs:domain bmLC:Drug;
+				  	rdfs:range bmLC:Drug;
+                  			rdfs:comment ".";
+					dcterms:modified "2019-05-23"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+bmLC:drugDrugInteraction_pubMed	rdf:type owl:ObjectProperty;
+					rdfs:label "drugDrugInteraction_pubMed";
+					rdfs:domain bmLC:Drug;
+				  	rdfs:range bmLC:Drug;
+                  			rdfs:comment ".";
+					dcterms:modified "2019-05-23"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+bmLC:phenotypeLabel	rdf:type owl:DatatypeProperty;
+					rdfs:label "PhenotypeLabel";
+					rdfs:domain bmLC:Phenotype;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Phenotype Label.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:enzymeID	rdf:type owl:DatatypeProperty;
+					rdfs:label "EnzymeID";
+					rdfs:domain bmLC:Enzyme;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Enzyme ID.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:enzymeLabel	rdf:type owl:DatatypeProperty;
+					rdfs:label "EnzymeLabel";
+					rdfs:domain bmLC:Enzyme;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Enzyme Label.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:drugDrugInteraction	rdf:type	owl:ObjectProperty;
+								rdfs:label	"drug_interactsWith_drug";
+								rdfs:domain	bmLC:Drug;
+								rdfs:range	bmLC:Drug;
+								rdfs:comment	"Represents drug-drug interactions.";
+								dcterms:modified "2018-07-24"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+bmLC:drug_isPredictedToInteractWith_drug	rdf:type	owl:ObjectProperty;
+											rdfs:label	"drug_isPredictedToInteractWith_drug";
+											rdfs:domain	bmLC:Drug;
+											rdfs:range	bmLC:Drug;
+											rdfs:comment	"Predicts drug-drug interactions using semEP.";
+											dcterms:modified "2018-07-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:drug_isPredictedToInteractsWith_enzyme	rdf:type	owl:ObjectProperty;
+											rdfs:label	"drug_isPredictedToInteractsWith_enzyme";
+											rdfs:domain	bmLC:Drug;
+											rdfs:range	bmLC:Enzyme;
+											rdfs:comment	"Predicts drug-enzyme interactions using semEP.";
+											dcterms:modified "2019-01-30"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.											
+
+bmLC:drug_interactsWith_enzyme	rdf:type	owl:ObjectProperty;
+								rdfs:label	"drug_interactsWith_enzyme";
+								rdfs:domain	bmLC:Drug;
+								rdfs:range	bmLC:Enzyme;
+								rdfs:comment	"Represents drug-enzyme (as target) interactions.";
+								dcterms:modified "2018-07-24"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+bmLC:drug_isPredictedToInteractWith_enzyme	rdf:type	owl:ObjectProperty;
+											rdfs:label	"drug_isPredictedToInteractWith_enzyme";
+											rdfs:domain	bmLC:Drug;
+											rdfs:range	bmLC:Enzyme;
+											rdfs:comment	"Predicts drug-enzyme interactions using semEP.";
+											dcterms:modified "2018-07-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:drug_interactsWith_protein	rdf:type	owl:ObjectProperty;
+									rdfs:label	"drug_interactsWith_protein";
+									rdfs:domain	bmLC:Drug;
+									rdfs:range	bmLC:Protein;
+									rdfs:comment	"Represents drug-protein (as target) interactions.";
+									dcterms:modified "2018-07-24"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+bmLC:drug_isPredictedToHave_sideEffect	rdf:type	owl:ObjectProperty;
+										rdfs:label	"drug_isPredictedToHave_sideEffect";
+										rdfs:domain	bmLC:Drug;
+										rdfs:range	bmLC:Phenotype;
+										rdfs:comment	"Predicts drug-sideEffect relations using semEP.";
+										dcterms:modified "2018-07-24"^^xsd:date;
+										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:drug_isRelatedTo_dse	rdf:type	owl:ObjectProperty;
+							rdfs:label	"drug_isRelatedTo_dse";
+							rdfs:domain	bmLC:Drug;
+							rdfs:range	bmLC:DrugSideEffect;
+							rdfs:comment	"Connection between drug and drug-sideEffect relation.";
+							dcterms:modified "2018-07-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:sideEffect_isRelatedTo_dse	rdf:type	owl:ObjectProperty;
+									rdfs:label	"sideEffect_isRelatedTo_dse";
+									rdfs:domain	bmLC:Phenotype;
+									rdfs:range	bmLC:DrugSideEffect;
+									rdfs:comment	"Connection between sideEffect and drug-sideEffect relation.";
+									dcterms:modified "2018-07-24"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:dse_AvgFrequency	rdf:type	owl:DatatypeProperty;
+						rdfs:label	"dse_AvgFrequency";
+						rdfs:domain	bmLC:DrugSideEffect;
+						rdfs:range	rdfs:Literal;
+						rdfs:comment	"Represents the average frequecy of particular drug having specific side effect.";
+						dcterms:modified "2018-07-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:dse_StandardDeviation	rdf:type	owl:DatatypeProperty;
+							rdfs:label	"dse_StandardDeviation";
+							rdfs:domain	bmLC:DrugSideEffect;
+							rdfs:range	rdfs:Literal;
+							rdfs:commnet	"Represents standard deviation from average frequecy of particular drug having specific side effect.";
+							dcterms:modified "2018-07-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:externalLink	rdf:type owl:DatatypeProperty;
+					rdfs:label "externalLink";
+					rdfs:domain bmLC:Concept;
+				  	rdfs:range xsd:anyURI;
+                  	rdfs:comment "Link to external resources.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:drugDrugInteraction_noCYP	rdf:type	owl:ObjectProperty;
+								rdfs:label	"drugDrugInteraction_noCYP";
+								rdfs:domain	bmLC:Drug;
+								rdfs:range	bmLC:Drug;
+								rdfs:comment	"Interaction between drugs where no CYP enzyme is shared between the drugs (NCRDs).";
+								dcterms:modified "2018-10-23"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:drugDrugInteraction_sameCYP	rdf:type	owl:ObjectProperty;
+								rdfs:label	"drugDrugInteraction_sameCYP";
+								rdfs:domain	bmLC:Drug;
+								rdfs:range	bmLC:Drug;
+								rdfs:comment	"Interaction between drugs where both drugs are metabolized by the same CY.";
+								dcterms:modified "2018-10-23"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+bmLC:effectLabel	rdf:type	owl:DatatypeProperty;
+								rdfs:label	"effectLabel";
+								rdfs:domain	bmLC:Effect;
+								rdfs:range	rdfs:Literal;
+								rdfs:comment	"Effect Label";
+								dcterms:modified "2019-01-29"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:impactLabel	rdf:type	owl:DatatypeProperty;
+								rdfs:label	"impactLabel";
+								rdfs:domain	bmLC:Drug;
+								rdfs:range	rdfs:Literal;
+								rdfs:comment	"Impact Label.";
+								dcterms:modified "2018-11-27"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:affects	rdf:type	owl:ObjectProperty;
+								rdfs:label	"affects";
+								rdfs:domain	bmLC:EffectInteraction;
+								rdfs:range	bmLC:Drug;
+								rdfs:comment	"The conncetion between drug that affects by the other one through their interaction and the interaction node.";
+								dcterms:modified "2018-11-27"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:isAffected	rdf:type	owl:ObjectProperty;
+								rdfs:label	"isAffected";
+								rdfs:domain	bmLC:EffectInteraction;
+								rdfs:range	bmLC:Drug;
+								rdfs:comment	"The conncetion between drug that is affected by the other one through their interaction and the interaction node.";
+								dcterms:modified "2018-11-27"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:hasEffect	rdf:type	owl:ObjectProperty;
+								rdfs:label	"hasEffect";
+								rdfs:domain	bmLC:EffectInteraction;
+								rdfs:range	bmLC:Effect;
+								rdfs:comment	"The conncetion between the effect of drugs interaction and the interaction node.";
+								dcterms:modified "2018-11-27"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:hasImpact	rdf:type	owl:ObjectProperty;
+								rdfs:label	"hasImpact";
+								rdfs:domain	bmLC:EffectInteraction;
+								rdfs:range	bmLC:Impact;
+								rdfs:comment	"The conncetion between the impact of drugs interaction and the interaction node.";
+								dcterms:modified "2018-11-27"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:enzyme_isRelatedTo_gene	rdf:type	owl:ObjectProperty;
+									rdfs:label	"enzyme_isRelatedTo_gene";
+									rdfs:domain	bmLC:Enzyme;
+									rdfs:range	bmLC:Gene;
+									rdfs:comment	"The connection between the enzyme and the gene from which it is produced.";
+									dcterms:modified "2018-10-30"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:targetID	rdf:type owl:DatatypeProperty;
+					rdfs:label "targetID";
+					rdfs:domain bmLC:Target;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Target ID.";
+					dcterms:modified "2018-10-30"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:targetLabel	rdf:type owl:DatatypeProperty;
+					rdfs:label "TargetLabel";
+					rdfs:domain bmLC:Target;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Target Label.";
+					dcterms:modified "2018-10-30"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:target_isRelatedTo_gene	rdf:type	owl:ObjectProperty;
+									rdfs:label	"target_isRelatedTo_gene";
+									rdfs:domain	bmLC:Target;
+									rdfs:range	bmLC:Gene;
+									rdfs:comment	"The connection between the target and the gene from which it is produced.";
+									dcterms:modified "2018-10-30"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:uniprotID	rdf:type owl:DatatypeProperty;
+					rdfs:label "uniprotID";
+					rdfs:domain bmLC:Concept;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "External connection to accession ID in uniprot.";
+					dcterms:modified "2018-10-30"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:disorderLabel	rdf:type owl:DatatypeProperty;
+					rdfs:label "DisorderLabel";
+					rdfs:domain bmLC:Disorder;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Disorder Label.";
+					dcterms:modified "2018-10-30"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:disorderLabel_SPA 	rdf:type owl:DatatypeProperty;
+					rdfs:label "disorderLabel_SPA";
+					rdfs:domain bmLC:Disorder;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Disorder Label_SPA.";
+					dcterms:modified "2018-11-25"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:disorderID 	rdf:type owl:DatatypeProperty;
+					rdfs:label "disorderID";
+					rdfs:domain bmLC:Disorder;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Disorder ID.";
+					dcterms:modified "2018-11-25"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+
+bmLC:disorder_has_indication	rdf:type	owl:ObjectProperty;
+								rdfs:label	"disorder_has_indication";
+								rdfs:domain	bmLC:Disorder;
+								rdfs:range	bmLC:Drug;
+								rdfs:comment	"";
+								dcterms:modified "2019-01-07"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:biomarker_has_indication	rdf:type	owl:ObjectProperty;
+								rdfs:label	"biomarker_has_indication";
+								rdfs:domain	bmLC:Biomarker;
+								rdfs:range	bmLC:Drug;
+								rdfs:comment	"";
+								dcterms:modified "2019-01-07"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:tumorStage_has_indication	rdf:type	owl:ObjectProperty;
+								rdfs:label	"tumorStage_has_indication";
+								rdfs:domain	bmLC:TumorStage;
+								rdfs:range	bmLC:Drug;
+								rdfs:comment	"";
+								dcterms:modified "2019-01-07"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:drugTargetInteraction	rdf:type	owl:ObjectProperty;
+								rdfs:label	"drugTargetInteraction";
+								rdfs:subPropertyOf	bmLC:drugTargetInteraction;
+								rdfs:domain	bmLC:Drug;
+								rdfs:range	bmLC:Target;
+								rdfs:comment	"Interaction between drug and its target.";
+								dcterms:modified "2018-10-30"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:drugEnzymeInteraction	rdf:type	owl:ObjectProperty;
+								rdfs:label	"drugEnzymeInteraction";
+								rdfs:subPropertyOf	bmLC:drugEnzymeInteraction;
+								rdfs:domain	bmLC:Drug;
+								rdfs:range	bmLC:Enzyme;
+								rdfs:comment	"Interaction between the drug and the enzyme.";
+								dcterms:modified "2018-10-30"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:drug_isPredictedToInteractsWith_target	rdf:type	owl:ObjectProperty;
+											rdfs:label	"drug_isPredictedToInteractsWith_target";
+											rdfs:domain	bmLC:Drug;
+											rdfs:range	bmLC:Target;
+											rdfs:comment	"Predicts drug-target interactions ...";
+											dcterms:modified "2018-11-22"^^xsd:date;
+											dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+
+bmLC:sideEffectLabel	rdf:type	owl:DatatypeProperty;
+									rdfs:label	"sideEffectLabel";
+									rdfs:domain	bmLC:Phenotype;
+									rdfs:range	rdfs:Literal;
+									rdfs:comment	".";
+									dcterms:modified "2018-11-27"^^xsd:date;
+									dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:drug_isRelatedTo_pdse	rdf:type	owl:ObjectProperty;
+							rdfs:label	"drug_isRelatedTo_pdse";
+							rdfs:domain	bmLC:Drug;
+							rdfs:range	bmLC:PredictedDrugSideEffect;
+							rdfs:comment	"Connection between drug and predicted-drug-sideEffect relation.";
+							dcterms:modified "2019-01-30"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
+
+bmLC:sideEffect_isRelatedTo_pdse	rdf:type	owl:ObjectProperty;
+							rdfs:label	"sideEffect_isRelatedTo_pdse";
+							rdfs:domain	bmLC:Phenotype;
+							rdfs:range	bmLC:PredictedDrugSideEffect;
+							rdfs:comment	"Connection between phenotype and predicted-drug-sideEffect relation.";
+							dcterms:modified "2019-01-30"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+																				
+
+#### WP2 requirements:
+##### lc_notes:
+
+bmLC:hasPerformanceStatus	rdf:type        owl:ObjectProperty;	
+						rdfs:label	"hasPerformanceStatus";
+						rdfs:domain	bmLC:PerformanceObservation;
+						rdfs:range	bmLC:PerformanceStatus;
+						rdfs:comment	"Connection between patient with lung cancer and performance status observations.";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:hasObservation	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasObservation";
+						rdfs:domain	bmLC:LCPatient;
+						rdfs:range	bmLC:Observation;
+						rdfs:comment	"Connection between patient with lung cancer and performance status observation or tumor stage observation.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:hasTki	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasTki";
+						rdfs:domain	bmLC:LCPatient;
+						rdfs:range	bmLC:Drug;
+						rdfs:comment	"Connection between patient with lung cancer and the tki drugs that has been prescribed.";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:hasImmunotherapy	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasImmunotherapy";
+						rdfs:domain	bmLC:LCPatient;
+						rdfs:range	bmLC:Drug;
+						rdfs:comment	"Connection between patient with lung cancer and the immunotherapy drugs that has been prescribed.";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:hasFamiliarAntecedent	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasFamiliarAntecedent";
+						rdfs:domain	bmLC:LCPatient;
+						rdfs:range	bmLC:FamiliarAntecedent;
+						rdfs:comment	"Connection between patient with lung cancer and her/his familiar antecedents.";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:familiarAntecedentLabel_ENG	rdf:type        owl:DatatypeProperty;	
+				rdfs:label	"familiarAntecedentLabel_ENG";
+						rdfs:domain	bmLC:FamiliarAntecedent;
+						rdfs:range	rdfs:Literal;
+						rdfs:comment	"The title of familiar antecedent.";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:hasDrug	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasDrug";
+						rdfs:domain	bmLC:LCPatient;
+						rdfs:range	bmLC:Drug;
+						rdfs:comment	"Connection between patient with lung cancer and the drugs that has been prescribed.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:hasDrugGroup	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasDrug";
+						rdfs:domain	bmLC:LCPatient;
+						rdfs:range	bmLC:DrugGroup;
+						rdfs:comment	"Connection between patient with lung cancer and the types of drugs that has been prescribed.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+bmLC:hasComorbidity	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasComorbidity";
+						rdfs:domain	bmLC:LCPatient;
+						rdfs:range	bmLC:Disorder;
+						rdfs:comment	"Connection between patient with lung cancer and her/his Comorbidities.";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:hasChemotherapy	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasChemotherapy";
+						rdfs:domain	bmLC:LCPatient;
+						rdfs:range	bmLC:Drug;
+						rdfs:comment	"Connection between patient with lung cancer and the Chemotherapy drugs that has been prescribed.";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:hasLiquidBiopsy	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasLiquidBiopsy";
+						rdfs:domain	bmLC:LCPatient;
+						rdfs:range	bmLC:LiquidBiopsy;
+						rdfs:comment	"Connection between patient with lung cancer and the liquid biopsy tests that has been run.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:hasMutation	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasMutation";
+						rdfs:domain	bmLC:LiquidBiopsy;
+						rdfs:range	bmLC:Mutation;
+						rdfs:comment	"Connection between liquid biopsy test and the mutation that has been observed.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:hasDate	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasDate";
+						rdfs:domain	bmLC:Concept;
+						rdfs:range	bmLC:Date;
+						rdfs:comment	"Date.";
+						dcterms:modified "2019-05-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:hasPerformanceObservation	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasPerformanceObservation";
+						rdfs:domain	bmLC:LCPatient;
+						rdfs:range	bmLC:PerformanceObservation;
+						rdfs:comment	"";
+						dcterms:modified "2019-01-30"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+bmLC:gender	rdf:type	owl:ObjectProperty;
+				rdfs:label	"gender";
+				rdfs:domain	bmLC:LCPatient;
+				rdfs:range	bmLC:Gender;
+				rdfs:comment	"Gender value of the patient.";
+				dcterms:modified "2018-01-14"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:tumorType	rdf:type	owl:ObjectProperty;
+				rdfs:label	"tumorType";
+				rdfs:domain	bmLC:LCPatient;
+				rdfs:range	bmLC:TumorType;
+				rdfs:comment	"tumorType";
+				dcterms:modified "2019-01-30"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:smoker	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"smoker";
+				rdfs:domain	bmLC:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient smokes.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:biomarkerLabel	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"biomarkerLabel";
+				rdfs:domain	bmLC:Biomarker;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"The name of biomarker.";
+				dcterms:modified "2018-11-22"^^xsd:date;
+				dcterms:creator   <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:biomarkers	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"biomarkers";
+				rdfs:domain	bmLC:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"";
+				dcterms:modified "2019-01-30"^^xsd:date;
+				dcterms:creator  <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:bioEgfr	rdf:type	owl:ObjectProperty;
+				rdfs:label	"bioEgfr";
+				rdfs:domain	bmLC:LCPatient;
+				rdfs:range	bmLC:Biomarker;
+				rdfs:comment	"Whether the patient's biopsies have been studied in terms of EGFR biomarker and if the result has been positive or negative in the case of this specific biomarker.";
+				dcterms:modified "2019-05-24"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+bmLC:bioAlk	rdf:type	owl:ObjectProperty;
+				rdfs:label	"bioAlk";
+				rdfs:domain	bmLC:LCPatient;
+				rdfs:range	bmLC:Biomarker;
+				rdfs:comment	"Whether the patient's biopsies have been studied in terms of ALK biomarker and if the result has been positive or negative in the case of this specific biomarker.";
+				dcterms:modified "2019-05-24"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+bmLC:bioRos1	rdf:type	owl:ObjectProperty;
+				rdfs:label	"bioRos1";
+				rdfs:domain	bmLC:LCPatient;
+				rdfs:range	bmLC:Biomarker;
+				rdfs:comment	"Whether the patient's biopsies have been studied in terms of ROS1 biomarker and if the result has been positive or negative in the case of this specific biomarker.";
+				dcterms:modified "2019-05-24"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:chemotherapy	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"chemotherapy";
+				rdfs:domain	bmLC:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient has received chemotherapy oncology treatment.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:tki	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"tki";
+				rdfs:domain	bmLC:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient has received tki oncology treatment.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:immunotherapy	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"immunotherapy";
+				rdfs:domain	bmLC:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient has received immunotherapy oncology treatment.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:antiangiogentic	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"antiangiogentic";
+				rdfs:domain	bmLC:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient has received antiangiogentic oncology treatment.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:radiationtherapy	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"radiationtherapy";
+				rdfs:domain	bmLC:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient has received radiationtherapy oncology treatment.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:surgery	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"surgery";
+				rdfs:domain	bmLC:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient has received radiationtherapy oncology treatment.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:familiarAntecedents	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"familiarAntecedents";
+				rdfs:domain	bmLC:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient has families with antecedents of cancer.";
+				dcterms:modified "2019-01-30"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+bmLC:systemicProgression	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"systemicProgression";
+				rdfs:domain	bmLC:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient has developed systemic progression which means a progression of the tumor to other organs apart from lungs.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:localProgression	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"localProgression";
+				rdfs:domain	bmLC:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient has developed local progression which means a progression of the tumor in the lungs.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:brainMetastasis	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"brainMetastasis";
+				rdfs:domain	bmLC:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether brain metastasis has been detected in the patient.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+bmLC:survivalMonths	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"survivalMonths";
+				rdfs:domain	bmLC:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Months from diagnosis to death or until the last documented record of the patient.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+bmLC:sampleDate	rdf:type	owl:ObjectProperty;
+					rdfs:label	"sampleDate";
+					rdfs:domain	bmLC:LiquidBiopsy;
+					rdfs:range	bmLC:Date;
+					rdfs:comment "Date on which the biopsy sample has been taken.";
+					dcterms:modified "2019-05-24"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:resultDate	rdf:type	owl:ObjectProperty;
+					rdfs:label	"resultDate";
+					rdfs:domain	bmLC:LiquidBiopsy;
+					rdfs:range	bmLC:Date;
+					rdfs:comment "Date on which the biopsy result has been provided.";
+					dcterms:modified "2019-05-24"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:targetTotal	rdf:type	owl:DatatypeProperty;
+					rdfs:label	"targetTotal";
+					rdfs:domain	bmLC:LiquidBiopsy;
+					rdfs:range	rdfs:Literal;
+					rdfs:comment "The percentage of circulating tumor DNA in the blood";
+					dcterms:modified "2017-07-24"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:copiesMicroliterFam	rdf:type	owl:DatatypeProperty;
+							rdfs:label	"copiesMicroliterFam";
+							rdfs:domain	bmLC:LiquidBiopsy;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment "Number of mutated copies per microliter of blood";
+							dcterms:modified "2017-07-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:copiesMicroliterVic	rdf:type	owl:DatatypeProperty;
+							rdfs:label	"copiesMicroliterVic";
+							rdfs:domain	bmLC:LiquidBiopsy;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment "Number of non-mutated copies per microliter of blood";
+							dcterms:modified "2017-07-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:tumorTypeLabel_ENG	rdf:type owl:DatatypeProperty;
+					rdfs:label "tumorTypeLabel_ENG";
+					rdfs:domain bmLC:TumorType;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "English tumor Type Label.";
+					dcterms:modified "2018-11-27"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:secondTumorTypeLabel	rdf:type owl:DatatypeProperty;
+					rdfs:label "secondTumorTypeLabel";
+					rdfs:domain bmLC:TumorType;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "second tumor Type Label.";
+					dcterms:modified "2019-05-24"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+
+bmLC:drugLabel_SPA	 rdf:type  owl:DatatypeProperty;
+					rdfs:label "drugLabel_SPA";	
+                                        rdfs:domain bmLC:Drug;
+               			        rdfs:range rdfs:Literal;
+					rdfs:comment	"";
+					dcterms:modified "2018-11-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:drugBankID rdf:type owl:DatatypeProperty;
+					rdfs:label "DrugBankID";
+					rdfs:domain bmLC:Drug;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Drug Bank ID.";
+					dcterms:modified "2018-11-22"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:drugGroupLabel  rdf:type owl:DatatypeProperty;
+					rdfs:label "drugGroupLabel";
+					rdfs:domain bmLC:DrugGroup;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Drug Group Label.";
+					dcterms:modified "2018-11-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:drugGroupLabel_SPA  rdf:type owl:DatatypeProperty;
+					rdfs:label "drugGroupLabel_SPA";
+					rdfs:domain bmLC:DrugGroup;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Drug Group Label_SPA.";
+					dcterms:modified "2018-11-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:hasTumorStage	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasTumorStage";
+						rdfs:domain	bmLC:TumorObservation;
+						rdfs:range	bmLC:TumorStage;
+						rdfs:comment	".";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:hasTumorObservation	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasTumorObservation";
+						rdfs:domain	bmLC:LCPatient;
+						rdfs:range	bmLC:TumorObservation;
+						rdfs:comment	".";
+						dcterms:modified "2019-01-30"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+bmLC:tumorStageLabel      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"tumorStageLabel";
+							rdfs:domain	bmLC:TumorStage;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:hasToxicityObservation	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasToxicityObservation";
+						rdfs:domain	bmLC:LCPatient;
+						rdfs:range	bmLC:ToxicityObservation;
+						rdfs:comment	".";
+						dcterms:modified "2019-05-24"^^xsd:date;
+						dcterms:creator  <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:hasToxicity	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasToxicity";
+						rdfs:domain	bmLC:ToxicityObservation;
+						rdfs:range	bmLC:Phenotype;
+						rdfs:comment	".";
+						dcterms:modified "2019-05-24"^^xsd:date;
+						dcterms:creator  <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:toxicityLabel_ENG 	rdf:type        owl:DatatypeProperty;	
+				rdfs:label	"toxicityLabel_ENG";
+						rdfs:domain	bmLC:Phenotype;
+						rdfs:range	rdfs:Literal;
+						rdfs:comment	".";
+						dcterms:modified "2019-05-24"^^xsd:date;
+						dcterms:creator  <https://www.l3s.de/de/user/mcastellanosd87>.
+
+
+##### lc_images:
+
+bmLC:bodyPartExaminedLabel     rdf:type	owl:DatatypeProperty;
+							rdfs:label	"bodyPartExaminedLabel";
+							rdfs:domain	bmLC:BodyPartExamined;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:diagnosisLabel    rdf:type	owl:DatatypeProperty;
+							rdfs:label	"diagnosisLabel";
+							rdfs:domain	bmLC:Diagnosis;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+
+bmLC:hasImage       rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasImage";
+							rdfs:domain	bmLC:LCPatient;
+							rdfs:range	bmLC:LCImage;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:imageType      rdf:type     owl:ObjectProperty;
+							rdfs:label	"imageType";
+							rdfs:domain	bmLC:LCImage;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2019-01-30"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+bmLC:modality      rdf:type     owl:ObjectProperty;
+							rdfs:label	"modality";
+							rdfs:domain	bmLC:LCImage;
+							rdfs:range	bmLC:Modality;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:manufacturer       rdf:type     owl:DatatypeProperty;
+							rdfs:label	"manufacturer";
+							rdfs:domain	bmLC:LCImage;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:studyDescription       rdf:type     owl:DatatypeProperty;
+							rdfs:label	"studyDescription";
+							rdfs:domain	bmLC:LCImage;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:bodyPartExamined      rdf:type     owl:ObjectProperty;
+							rdfs:label	"bodyPartExamined";
+							rdfs:domain	bmLC:LCImage;
+							rdfs:range	bmLC:BodyPartExamined;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:sliceThickness       rdf:type     owl:DatatypeProperty;
+							rdfs:label	"sliceThickness";
+							rdfs:domain	bmLC:LCImage;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:protocolName       rdf:type     owl:DatatypeProperty;
+							rdfs:label	"protocolName";
+							rdfs:domain	bmLC:LCImage;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:patientPosition      rdf:type     owl:ObjectProperty;
+							rdfs:label	"patientPosition";
+							rdfs:domain	bmLC:LCImage;
+							rdfs:range	bmLC:PatientPosition;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:rows       rdf:type     owl:DatatypeProperty;
+							rdfs:label	"rows";
+							rdfs:domain	bmLC:LCImage;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:columns       rdf:type     owl:DatatypeProperty;
+							rdfs:label	"columns";
+							rdfs:domain	bmLC:LCImage;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:pixelSpacingX       rdf:type     owl:DatatypeProperty;
+							rdfs:label	"pixelSpacingX";
+							rdfs:domain	bmLC:LCImage;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:pixelSpacingY      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"pixelSpacingY";
+							rdfs:domain	bmLC:LCImage;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:bitsAllocated      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"bitsAllocated";
+							rdfs:domain	bmLC:LCImage;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:bitsStored      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"bitsStored";
+							rdfs:domain	bmLC:LCImage;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:highBit      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"highBit";
+							rdfs:domain	bmLC:LCImage;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:rescaleIntercept      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"rescaleIntercept";
+							rdfs:domain	bmLC:LCImage;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:rescaleSlope      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"rescaleSlope";
+							rdfs:domain	bmLC:LCImage;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:huphm      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"huphm";
+							rdfs:domain	bmLC:LCImage;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:lungLaterality      rdf:type     owl:ObjectProperty;
+							rdfs:label	"lungLaterality";
+							rdfs:domain	bmLC:Organ;
+							rdfs:range	bmLC:LungLaterality;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:lungLateralityLabel      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"lungLateralityLabel";
+							rdfs:domain	bmLC:LungLaterality;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:modalityLabel      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"modalityLabel";
+							rdfs:domain	bmLC:Modality;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+
+bmLC:hasOrgans     rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasOrgans";
+							rdfs:domain	bmLC:LCImage;
+							rdfs:range	bmLC:Organ;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:hasDiagnosis     rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasDiagnosis";
+							rdfs:domain	bmLC:LCPatient;
+							rdfs:range	bmLC:Diagnosis;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:hasDiagnosis_imageBased     rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasDiagnosis_imageBased";
+							rdfs:domain	bmLC:LCPatient;
+							rdfs:range	bmLC:Diagnosis;
+							rdfs:comment ".";
+							dcterms:modified "2019-01-30"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+bmLC:hasDiagnosisTumorStage   rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasDiagnosisTumorStage";
+							rdfs:domain	bmLC:Diagnosis;
+							rdfs:range	bmLC:TumorStage;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:hasDiagnosisTumorType   rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasDiagnosisTumorType";
+							rdfs:domain	bmLC:Diagnosis;
+							rdfs:range	bmLC:TumorType;
+							rdfs:comment ".";
+							dcterms:modified "2019-05-23"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+
+bmLC:hasDiagnosisDate   rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasDiagnosisDate";
+							rdfs:domain	bmLC:Diagnosis;
+							rdfs:range	bmLC:Date;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:hasDiagnosisAge   rdf:type     owl:DatatypeProperty;
+							rdfs:label	"hasDiagnosisAge";
+							rdfs:domain	bmLC:Diagnosis;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:hasDiagnosisPerformanceStatus   rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasDiagnosisPerformanceStatus";
+							rdfs:domain	bmLC:Diagnosis;
+							rdfs:range	bmLC:PerformanceStatus;
+							rdfs:comment ".";
+							dcterms:modified "2019-05-24"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:patientPositionLabel     rdf:type     owl:DatatypeProperty;
+							rdfs:label	"patientPositionLabel";
+							rdfs:domain	bmLC:PatientPosition;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+
+bmLC:genderLabel_ENG        rdf:type     owl:DatatypeProperty;
+							rdfs:label	"genderLabel_ENG";
+							rdfs:domain	bmLC:Gender;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2019-01-30"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+####### lc_similarity:
+bmLC:chemotherapyList      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"chemotherapyList";
+							rdfs:domain	bmLC:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+
+bmLC:immunotherapyList      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"immunotherapyList";
+							rdfs:domain	bmLC:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+
+bmLC:tkiList      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"tkiList";
+							rdfs:domain	bmLC:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:comorbidityList      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"comorbidityList";
+							rdfs:domain	bmLC:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:drugGroupList      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"drugGroupList";
+							rdfs:domain	bmLC:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:biopsyList      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"biopsyList";
+							rdfs:domain	bmLC:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:ecogList      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"ecogList";
+							rdfs:domain	bmLC:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:stageList      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"stageList";
+							rdfs:domain	bmLC:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:familialAntecedentList      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"familialAntecedentList";
+							rdfs:domain	bmLC:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:nonOncologicalTreatmentList      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"nonOncologicalTreatmentList";
+							rdfs:domain	bmLC:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:isBetweenPatients	rdf:type        owl:ObjectProperty;	
+				                rdfs:label	"isBetweenPatients";
+						rdfs:domain	bmLC:PatientSimilarity;
+						rdfs:range	bmLC:LCPatient;
+						rdfs:comment	".";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+bmLC:similarityValue     rdf:type     owl:DatatypeProperty;
+							rdfs:label	"similarityValue";
+							rdfs:domain	bmLC:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
