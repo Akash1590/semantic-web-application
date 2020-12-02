@@ -4,7 +4,7 @@ Download the fuseki sever from this URL: https://jena.apache.org/download/ => Ap
 After downloading, unzip the file and rename the folder as "Fuseki" and move it to C:\\ <br>
 Clone the repositry to your local machine.<br>
 Copy the rdf.ttl file which is located on repositoryfolder(semantic-web-application-master)=>datafiles=>rdf.ttl and then put it to Fuseki folder.<br>
-Run the command prompt and go to the Fuseki folder and run the command "fuseki-server --file=rdf.ttl /dataset"<br>
+Start the command prompt on Fuseki folder and run the command "fuseki-server --file=rdf.ttl /dataset"<br>
 It will run the server on port 3030 and you can see the data on localhost:3030<br>
 
 Now at first you have to download the Node.js(https://nodejs.org/en/)<br>
