@@ -18,4 +18,4 @@ Download and install node.js. Go to the project directory “semantic-web-applic
 <br>
 <b> node index </b><br>
 <br>
-Go to this URL- http://localhost:1234 to see the semantic-web-application. <br>
+Go to this URL- <a href="http://localhost:1234/index" >http://localhost:1234 to see the semantic-web-application.</a><br>
