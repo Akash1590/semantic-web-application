@@ -9,13 +9,13 @@
 -Paste “rdf.ttl” to C:\Fuseki<br>
 -To run the server, run the following command from your terminal from the Fuseki directory: <br>
 <br>
-fuseki-server --file=rdf.ttl /dataset <br>
+<b>fuseki-server --file=rdf.ttl /dataset </b><br>
 <br>
 Make sure you have the necessary dependencies: <br>
 Node.js: <br>
-<a href="https:/nodejs.org/en/" >https:/nodejs.org/en/ </a><br>
+https://nodejs.org/en/ <br>
 Download and install node.js. Go to the project directory “semantic-web-application-master” and run the following command from your terminal: <br>
 <br>
-node index<br>
+<b> node index </b><br>
 <br>
 Go to this URL- “http://localhost:1234/” to see the semantic-web-application. <br>
