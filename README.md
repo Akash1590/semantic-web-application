@@ -15,7 +15,7 @@
 Make sure you have the necessary dependencies: <br>
 Node.js: <br>
 https://nodejs.org/en/ <br>
-Download and install node.js. Go to the project directory “semantic-web-application-master” and run the following command from your terminal: <br>
+Download and install node.js. Go to the project directory “semantic-web-application-master” and open the terminal inside of this folder and run the following command from your terminal: <br>
 <br>
 <b> node index </b><br>
 <br>
