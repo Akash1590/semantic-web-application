@@ -2,6 +2,7 @@
 <b>INSTALLATION:</b><br>
 -To run the Fuseki server, download from the URL below: <br>
 -Go> https://jena.apache.org/download/ > Apache Jena Fuseki(apache-jena-fuseki-3.17.0.tar.gz) <br>
+-Unzip the download file<br>
 -Rename the folder inside named “Apache Jena Fuseki” to "Fuseki" and move it to C:\ <br>
 -Download this repository to your local machine. <br>
 -Unzip the repository and take the inside folder of the repository. <br>
