@@ -5,7 +5,7 @@
 -Unzip the download file<br>
 -Rename the folder inside named “Apache Jena Fuseki” to "Fuseki" and move it to C:\ <br>
 -Download this repository to your local machine. <br>
--Unzip the repository and take the inside folder of the repository. <br>
+-Unzip the repository  <br>
 -Go to repository directory > semantic-web-application-master> datafiles> Copy “rdf.ttl” file<br>
 -Paste “rdf.ttl” to C:\Fuseki<br>
 -To run the server, run the following command from your terminal from the Fuseki directory: <br>
