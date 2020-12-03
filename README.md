@@ -1,3 +1,4 @@
+<h2>Semantic Web Application </h2> <br>
 <b>INSTALLATION:</b><br>
 -To run the Fuseki server, download from the URL below: <br>
 -Go> https://jena.apache.org/download/ > Apache Jena Fuseki(apache-jena-fuseki-3.17.0.tar.gz) <br>
