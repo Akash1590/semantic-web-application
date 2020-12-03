@@ -1,12 +1,19 @@
-# semantic-web-application
-For Running this application First you have download the fuseki server.<br>
-Download the fuseki sever from this URL: https://jena.apache.org/download/ and download Apache Jena Fuseki(apache-jena-fuseki-3.17.0.tar.gz)<br>
-After downloading, unzip the file and rename the folder as "Fuseki" and move it to C:\\ <br>
-Copy the rdf.ttl file which is located on "datafiles" folder and then put it to Fuseki folder.<br>
-Run the command prompt and go to the Fuseki folder and run the command "fuseki-server --file=rdf.ttl /dataset"<br>
-It will run the server on port 3030 and you can see the data on localhost:3030<br>
-
-Now at first you have to download the Node.js(https://nodejs.org/en/)<br>
-After download the Node.js and then go to command on project folder <br>
-Run the project using "nodemon index"<br>
-Go to "localhost:1234"<br>
+<b>INSTALLATION:</b><br>
+-To run the Fuseki server, download from the URL below: <br>
+-Go> https://jena.apache.org/download/ > Apache Jena Fuseki(apache-jena-fuseki-3.17.0.tar.gz) <br>
+-Rename the folder inside named “Apache Jena Fuseki” to "Fuseki" and move it to C:\ <br>
+-Download this repository to your local machine. <br>
+-Unzip the repository and take the inside folder of the repository. <br>
+-Go to repository directory > semantic-web-application-master> datafiles> Copy “rdf.ttl” file<br>
+-Paste “rdf.ttl” to C:\Fuseki<br>
+-To run the server, run the following command from your terminal from the Fuseki directory: <br>
+<br>
+fuseki-server --file=rdf.ttl /dataset <br>
+<br>
+Make sure you have the necessary dependencies: <br>
+Node.js https:/nodejs.org/en/<br>
+Download and install node.js. Go to the project directory “semantic-web-application-master” and run the following command from your terminal: <br>
+<br>
+node index<br>
+<br>
+Go to this URL- “http://localhost:1234/” to see the semantic-web-application. <br>
