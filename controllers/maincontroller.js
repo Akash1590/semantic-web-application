@@ -117,8 +117,8 @@ router.get('/',function(req,res)
                 subject[i] = subject[i].replace('http://bigmedilytics.eu/vocab/','');
             }
             
-            // subjectdata=subject;
-            // fulldataset=dataset;
+            subjectdata=subject;
+            fulldataset=dataset;
             
             res.render('index', { data: subject, object: object, predicate: predicate});
         }
@@ -131,54 +131,54 @@ router.get('/',function(req,res)
 });
 
 router.get('/draw', function (req, res) {
-    var testQuery = "PREFIX owl: <http://www.w3.org/2002/07/owl#> select distinct  ?subject ?predicate ?object {?subject a owl:Class; ?predicate ?object FILTER(!isBlank(?subject)) }";
-    var url = "http://localhost:3030/dataset"
-    var params = "testQuery"
-    var data;
-    var http = new XMLHttpRequest();
-    http.open("POST", url + "?query=" + encodeURIComponent(testQuery), true);
-    http.onreadystatechange = function () {
-        if (http.readyState == 4 && http.status == 200) {
+    // var testQuery = "PREFIX owl: <http://www.w3.org/2002/07/owl#> select distinct  ?subject ?predicate ?object {?subject a owl:Class; ?predicate ?object FILTER(!isBlank(?subject)) }";
+    // var url = "http://localhost:3030/dataset"
+    // var params = "testQuery"
+    // var data;
+    // var http = new XMLHttpRequest();
+    // http.open("POST", url + "?query=" + encodeURIComponent(testQuery), true);
+    // http.onreadystatechange = function () {
+    //     if (http.readyState == 4 && http.status == 200) {
 
-            console.log("Successfull");
-            getdata = http.responseText;
-            fs.writeFileSync('data.txt', getdata);
-            var value = JSON.parse(getdata);
+    //         console.log("Successfull");
+    //         getdata = http.responseText;
+    //         fs.writeFileSync('data.txt', getdata);
+    //         var value = JSON.parse(getdata);
 
-            var dataset = value["results"]["bindings"];
-            var subject = [];
-            var counter = 0;
-            for (var i in dataset) {
-                var flag = true;
-                subject.forEach(element => {
-                    if (element === dataset[i].subject.value) {
-                        flag = false;
-                    }
-                });
-                if (flag == true) {
-                    subject[counter] = dataset[i].subject.value;
+    //         var dataset = value["results"]["bindings"];
+    //         var subject = [];
+    //         var counter = 0;
+    //         for (var i in dataset) {
+    //             var flag = true;
+    //             subject.forEach(element => {
+    //                 if (element === dataset[i].subject.value) {
+    //                     flag = false;
+    //                 }
+    //             });
+    //             if (flag == true) {
+    //                 subject[counter] = dataset[i].subject.value;
                    
-                    counter = counter + 1;
-                }
+    //                 counter = counter + 1;
+    //             }
 
-            }
-            subject.forEach(element => {
-                var counter = 0;
-                for (var i in dataset) {
-                    if (element === dataset[i].subject.value) {
-                        counter++;
-                    }
-                }
+    //         }
+    //         subject.forEach(element => {
+    //             var counter = 0;
+    //             for (var i in dataset) {
+    //                 if (element === dataset[i].subject.value) {
+    //                     counter++;
+    //                 }
+    //             }
 
-            });
+    //         });
             // subjectdata = subject;
             // fulldataset = dataset;
             //console.log(req.query.q);
             var selectedsubject = req.query.q;
             selectedsubject ='http://bigmedilytics.eu/vocab/'+selectedsubject;
             //console.log(selectedsubject);
-            // var subject = subjectdata;
-            // var dataset = fulldataset;
+            var subject = subjectdata;
+            var dataset = fulldataset;
             var counter = 0;
             var predicate = [];
             var object = [];
@@ -221,11 +221,11 @@ router.get('/draw', function (req, res) {
             res.render('index', { data: subject, object: object, predicate: predicate, subject: selectedsubject });
 
 
-        }
+        // }
 
 
-    }
-    http.send();
+    // }
+    // http.send();
 
     
 });
