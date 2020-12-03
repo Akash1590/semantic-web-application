@@ -15,15 +15,12 @@
 <body>
 
     <div class="wrapper d-flex align-items-stretch">
-        <nav id="sidebar">
+        <nav id="sidebar" style="margin-left: 1000px;">
             <div class="p-4 pt-5">
                 <h2 class="mb-4">All Subjects</h2>
-                <!-- <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.jpg);"></a> -->
                 <div style="height: 570px; width: 100%; overflow:auto;" id="mydiv"> 
                 <ul class="list-unstyled components mb-5">
                     
-
-
                     <% data.forEach(function(dat) { %>
                     <li>
                         <a id='subject' href='/index/draw?q=<%= dat %>'><%= dat %></a>
@@ -31,15 +28,10 @@
                     <% }); %>
                 </ul>
                 </div>
-
-                <!-- <div class="footer">
-	        	<p><a target="_blank">Beakash</a></p>
-	        </div> -->
-
             </div>
         </nav>
         <% if (predicate.length>0 ) {%>
-        <div id="content" class="p-4 p-md-5">
+        <div id="container">
             <svg data-gwd-shape="oval" preserveAspectRatio="none" viewBox="0 0 68 55" class="gwd-oval-1kbl gwd-svg-1rcm"
                 id="maincircle">
                 <ellipse cx="50%" cy="50%" rx="33.5" ry="27"></ellipse>

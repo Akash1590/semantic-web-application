@@ -446,7 +446,7 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container {
+/* .container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -487,7 +487,7 @@ pre {
   .no-gutters > .col,
   .no-gutters > [class*="col-"] {
     padding-right: 0;
-    padding-left: 0; }
+    padding-left: 0; } */
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
@@ -6734,11 +6734,12 @@ button.bg-dark:focus {
   padding-left: 1rem !important; }
 
 .p-4 {
-  padding: 1.5rem !important; }
+  padding-left: 1.5rem !important; }
 
 .pt-4,
 .py-4 {
-  padding-top: 1.5rem !important; }
+  padding-top: 1.5rem !important;
+margin-left: 1000px; }
 
 .pr-4,
 .px-4 {
@@ -8108,9 +8109,10 @@ a.text-dark:hover, a.text-dark:focus {
   body {
     min-width: 992px !important; }
   .container {
-    min-width: 992px !important; }
-  .navbar {
-    display: none; }
+    min-width: 992px !important;
+  padding-left: 100px !important; }
+  /* .navbar {
+    display: none; } */
   .badge {
     border: 1px solid #000; }
   .table {
@@ -8219,7 +8221,7 @@ h1, h2, h3, h4, h5,
   max-width: 500px;
   background: #1d1919;
   color: #fff;
-  margin-left: 1000px;
+  /* margin-left: 1000px; */
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
